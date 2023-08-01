@@ -1,0 +1,77 @@
+.banner {
+    background: radial-gradient(circle, #0D0F0F, #1E2326);
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 95px);
+}
+
+.container {
+    width: 31.25rem;
+    height: 43.75rem;
+    background: var(--background-navbar);
+    border-radius: 0 0 50px 50px;
+    margin: 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.perfil {
+    background: url('../../img/perfil.jpg') no-repeat center / cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid #1CB698;
+}
+
+.information {
+    color: var(--text);
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.information__name {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    background: var(--background-navbar);
+}
+
+.information__description {
+    font-size: 1.5rem;
+    background: var(--background-navbar);
+}
+
+.links {
+    width: 100%;
+}
+
+.links__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links__list__name {
+    list-style: none;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    transition: background .8s;
+}
+
+.links__list__name:hover {
+    background: var(--text-navbar);
+}
+
+.links__list__name-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: auto;
+}

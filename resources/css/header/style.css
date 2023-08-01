@@ -1,0 +1,54 @@
+.container__header {
+    width: 100vw;
+    background: var(--background-navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background: var(--background-navbar);
+    margin: 1.5rem 0 1.5rem 8rem;
+}
+
+.logo__name {
+    font-size: 2.5rem;
+    background: var(--background-navbar);
+    ;
+    color: var(--text-navbar);
+    text-decoration: none;
+}
+
+.navbar {
+    width: 50%;
+    margin: 1.5rem 8rem 1.5rem 0;
+    background: var(--background-navbar);
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    background: var(--background-navbar);
+}
+
+.options__list {
+    list-style: none;
+    background: var(--background-navbar);
+}
+
+.options__list__name {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: var(--background-navbar);
+    transition: color .8s;
+}
+
+.options__list__name:hover {
+    color: var(--text-navbar);
+}
+
+.menu {
+    margin-right: 5rem;
+    display: none;
+}
