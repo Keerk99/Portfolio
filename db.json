@@ -1,0 +1,16 @@
+{
+    "skills": [
+        {
+            "nombre": "HTML"
+        },
+        {
+            "nombre": "JavaScript"
+        },
+        {
+            "nombre": "CSS"
+        },
+        {
+            "nombre": "PHP"
+        }
+    ]
+}
