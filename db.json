@@ -1,16 +1,20 @@
 {
-    "skills": [
+    "formación": [
         {
-            "nombre": "HTML"
+            "nombre": "HTML",
+            "id": "1"
         },
         {
-            "nombre": "JavaScript"
+            "nombre": "JavaScript",
+            "id": "2"
         },
         {
-            "nombre": "CSS"
+            "nombre": "CSS",
+            "id": "3"
         },
         {
-            "nombre": "PHP"
+            "nombre": "SQL",
+            "id": "4"
         }
     ]
 }

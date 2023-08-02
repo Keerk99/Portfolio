@@ -1,3 +1,8 @@
+/*SECTION ABOUT BANNER*/
+main {
+    margin: 5.937rem 0 0 0;
+}
+
 .banner {
     background: radial-gradient(circle, #0D0F0F, #1E2326);
     display: flex;
@@ -5,7 +10,7 @@
     height: calc(100vh - 95px);
 }
 
-.container {
+.container__banner {
     width: 31.25rem;
     height: 43.75rem;
     background: var(--background-navbar);
@@ -72,6 +77,195 @@
 .links__list__name-link {
     font-size: 2rem;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--text);
     margin: auto;
+    background: transparent;
+}
+
+/*END OF SECTION ABOUT BANNER*/
+
+/*SECTION ABOUT ME*/
+
+.aboutme {
+    background: var(--background-navbar);
+}
+
+.container__aboutme {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    color: var(--text);
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+}
+
+.aboutme__description {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.aboutme__description span {
+    color: var(--text-navbar);
+}
+
+/*END OF SECTION ABOUT ME*/
+
+/*SECTION SKILLS*/
+
+.skills {
+    background: var(--background2);
+}
+
+.container__skills {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+}
+
+.skills__container {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.skills__list__name {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.icon {
+    font-size: 3.5rem;
+}
+
+/*END OF SECTION SKILLS*/
+
+/*SECTION HOBBIES*/
+
+.hobbies {
+    background: var(--background-navbar);
+}
+
+.container__hobbies {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+}
+
+.hobbies__container {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+.hobbies__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.hobbies__list__name {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/*END OF SECTION HOBBIES*/
+
+/*SECTION FORMATION*/
+
+.formacion {
+    background: var(--background2);
+}
+
+.container__formacion {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+}
+
+.formacion__container {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+.formacion__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.formacion__list__name {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    font-size: 1.2rem;
+}
+
+.formation__img {
+    width: 300px;
+}
+
+.formation__text {
+    text-align: center;
+}
+
+/*END OF SECTION FORMATION*/
+
+/*SECTION PROJECTS*/
+
+.projects {
+    background: var(--background-navbar);
+}
+
+.container__projects {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+}
+
+.projects__container {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.projects__list__name {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+.projects__img {
+    width: 500px;
 }

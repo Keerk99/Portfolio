@@ -1,5 +1,12 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
 .container__header {
-    width: 100vw;
     background: var(--background-navbar);
     display: flex;
     justify-content: space-between;
@@ -8,7 +15,7 @@
 
 .logo {
     background: var(--background-navbar);
-    margin: 1.5rem 0 1.5rem 8rem;
+    margin: 1.5rem 0 1.5rem 6rem;
 }
 
 .logo__name {
@@ -20,8 +27,8 @@
 }
 
 .navbar {
-    width: 50%;
-    margin: 1.5rem 8rem 1.5rem 0;
+    width: 55%;
+    margin: 1.5rem 6rem 1.5rem 0;
     background: var(--background-navbar);
 }
 
@@ -39,7 +46,7 @@
 .options__list__name {
     color: var(--text);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background: var(--background-navbar);
     transition: color .8s;
 }
