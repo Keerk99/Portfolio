@@ -113,6 +113,45 @@ main {
     color: var(--text-navbar);
 }
 
+.cv__container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.cv__button {
+    position: relative;
+    color: var(--text);
+    display: flex;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    height: 40px;
+    width: 150px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.cv__button i {
+    margin-left: 8px;
+}
+
+.cv__button .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--text-navbar);
+    z-index: -10;
+    transition: 1s;
+}
+
+.cv__button:hover .overlay1 {
+    width: 100%;
+}
+
 /*END OF SECTION ABOUT ME*/
 
 /*SECTION SKILLS*/
@@ -263,9 +302,396 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 1.2rem;
+    margin: 50px 0;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .projects__img {
-    width: 500px;
+    width: 700px;
+}
+
+.projects__text {
+    font-size: 1.2rem;
+    width: 220px;
+}
+
+.button__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.text__button {
+    position: relative;
+    color: var(--text);
+    display: flex;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    height: 40px;
+    width: 100px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-size: 1rem;
+}
+
+.text__button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--text-navbar);
+    z-index: -10;
+    transition: 1s;
+}
+
+.text__button:hover .overlay {
+    width: 100%;
+}
+
+/*END OF SECTION PROJECTS*/
+
+/*SECTION CONTACT*/
+
+.contact {
+    background: var(--background2);
+}
+
+.container__contact {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+}
+
+.contact__container {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    margin: 20px 10px;
+}
+
+.input {
+    color: var(--text);
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: var(--background-navbar);
+    border: none;
+}
+
+.input__msg {
+    color: var(--text);
+    width: 600px;
+    height: 250px;
+    padding: 10px;
+    font-size: 1.2rem;
+    resize: none;
+    background: var(--background-navbar);
+    border: none;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.form__button {
+    position: relative;
+    margin: 20px 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    display: block;
+    z-index: 10;
+    border: 1px solid #FFFFFF;
+}
+
+.form__button .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--text-navbar);
+    z-index: -10;
+    transition: 1s;
+}
+
+.form__button:hover .overlay2 {
+    width: 100%;
+}
+
+/*END OF SECTION CONTACT*/
+
+/*FOOTER*/
+
+.footer {
+    background: var(--background-navbar);
+}
+
+.container__footer {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright {
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .container__aboutme,
+    .container__skills,
+    .skills__container,
+    .container__hobbies,
+    .hobbies__container,
+    .container__formacion,
+    .formacion__container,
+    .container__projects,
+    .projects__container,
+    .container__contact,
+    .contact__container,
+    .container__footer {
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 5rem;
+    }
+
+    .navbar {
+        width: 65%;
+        margin-right: 5rem;
+    }
+
+    .options__list__name {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container__banner {
+        height: 38rem;
+    }
+
+    .perfil {
+        width: 340px;
+        height: 340px;
+    }
+
+    .container__aboutme,
+    .container__skills,
+    .skills__container,
+    .container__hobbies,
+    .hobbies__container,
+    .container__formacion,
+    .formacion__container,
+    .container__projects,
+    .projects__container,
+    .container__contact,
+    .contact__container,
+    .container__footer {
+        width: 100%;
+    }
+
+    .projects__list__name {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin: 30px 0;
+    }
+
+    .projects__text {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .container__banner {
+        height: 35rem;
+        width: 20rem;
+    }
+
+    .perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container__aboutme,
+    .container__skills,
+    .skills__container,
+    .container__hobbies,
+    .hobbies__container,
+    .container__formacion,
+    .formacion__container,
+    .container__projects,
+    .projects__container,
+    .container__contact,
+    .contact__container,
+    .container__footer {
+        width: 100%;
+    }
+
+    .formacion__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .projects__list__name {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 20px 0;
+    }
+
+    .projects__img {
+        width: 300px;
+    }
+
+    .projects__text {
+        text-align: center;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .container__footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
+    .container__banner {
+        height: 30rem;
+        width: 15rem;
+        margin-top: 5rem;
+    }
+
+    .perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .information__name {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .container__aboutme,
+    .container__skills,
+    .skills__container,
+    .container__hobbies,
+    .hobbies__container,
+    .container__formacion,
+    .formacion__container,
+    .container__projects,
+    .projects__container,
+    .container__contact,
+    .contact__container,
+    .container__footer {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .aboutme__description {
+        font-size: 1.2rem;
+    }
+
+    .skills__list,
+    .hobbies__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__list__name {
+        font-size: 1rem;
+    }
+
+    .hobbies__list__name {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .formacion__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .formacion__list__name {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .formation__img {
+        width: 100%;
+    }
+
+    .formation__text {
+        margin-top: 10px;
+    }
+
+    .projects__list {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .projects__list__name {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .projects__img {
+        width: 250px;
+    }
+
+    .projects__text {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .container__footer {
+        text-align: center;
+    }
 }

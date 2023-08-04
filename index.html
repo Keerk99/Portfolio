@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="resources/css/header/style.css">
     <link rel="stylesheet" href="resources/css/main/style.css">
     <link rel="stylesheet" href="resources/css/footer/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
@@ -21,23 +24,37 @@
             </div>
             <nav class="navbar">
                 <ul class="options">
-                    <li class="options__list"><a class="options__list__name" href="#">Inicio</a></li>
-                    <li class="options__list"><a class="options__list__name" href="#">Sobre Mi</a></li>
-                    <li class="options__list"><a class="options__list__name" href="#">Skills</a></li>
-                    <li class="options__list"><a class="options__list__name" href="#">Hobbies</a></li>
-                    <li class="options__list"><a class="options__list__name" href="#">Formación</a></li>
-                    <li class="options__list"><a class="options__list__name" href="#">Proyectos</a></li>
-                    <li class="options__list"><a class="options__list__name" href="#">Contacto</a></li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#aboutme">Sobre Mi</a>
+                    </li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#skills">Skills</a>
+                    </li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#formacion">Formación</a>
+                    </li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="options__list">
+                        <a class="options__list__name" href="#contact">Contacto</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="menu">
-                <i class="fa-solid fa-bars"></i>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-bars" id="menu__icon"></i>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="banner">
+        <section id="inicio" class="banner">
             <div class="container__banner">
                 <div class="perfil"></div>
                 <div class="information">
@@ -60,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutme">
+        <section id="aboutme" class="aboutme">
             <div class="container__aboutme">
                 <h2 class="title aboutme__title">Sobre Mi</h2>
                 <p class="aboutme__description">Hola, soy <span>Antony Huaman</span>, un profesional que está ganando
@@ -68,9 +85,14 @@
                     estoy participando del proyecto Oracle One en Alura Latam puliendo mis hablidades para mejorar el
                     desarrollo interactivo de interfaces web.
                 </p>
+                <div class="cv__container">
+                    <a download="CV_Antony_Huaman" href="resources/files/CV ANTONY HUAMAN.pdf" target="_blank"
+                        class="cv__button">Descargar CV <i class="fa-solid fa-download"></i><span
+                            class="overlay1"></span></a>
+                </div>
             </div>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="container__skills">
                 <h2 class="title skills__title">Skills</h2>
                 <div class="skills__container">
@@ -83,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="hobbies">
+        <section id="hobbies" class="hobbies">
             <div class="container__hobbies">
                 <h2 class="title hobbies__title">Hobbies</h2>
                 <div class="hobbies__container">
@@ -95,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="formacion">
+        <section id="formacion" class="formacion">
             <div class="container__formacion">
                 <h2 class="title formacion__title">Formación Académica</h2>
                 <div class="formacion__container">
@@ -117,7 +139,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container__projects">
                 <h2 class="title projects__title">Proyectos</h2>
                 <div class="projects__container">
@@ -127,22 +149,75 @@
                             <div class="projects__text">
                                 <h3 class="text__subtitle">Encriptador de Texto</h3>
                                 <p class="text__description">Challenge Oracle</p>
-                                <a href="https://github.com/Keerk99/encriptador.github.io" target="_blank"
-                                    class="text__button">Repositorio</a>
-                                <a href="https://keerk99.github.io/encriptador.github.io/" target="_blank"
-                                    class="text__button">Ver Demo</a>
+                                <div class="button__container">
+                                    <a href="https://github.com/Keerk99/encriptador.github.io" target="_blank"
+                                        class="text__button">Repositorio<span class="overlay"></span></a>
+                                    <a href="https://keerk99.github.io/encriptador.github.io/" target="_blank"
+                                        class="text__button">Ver Demo<span class="overlay"></span></a>
+                                </div>
                             </div>
                         </li>
+<!--                         <li class="projects__list__name reverse">
+                            <img src="resources/img/proyecto1.JPG" alt="" class="projects__img">
+                            <div class="projects__text">
+                                <h3 class="text__subtitle">Encriptador de Texto</h3>
+                                <p class="text__description">Challenge Oracle</p>
+                                <div class="button__container">
+                                    <a href="https://github.com/Keerk99/encriptador.github.io" target="_blank"
+                                        class="text__button">Repositorio<span class="overlay"></span></a>
+                                    <a href="https://keerk99.github.io/encriptador.github.io/" target="_blank"
+                                        class="text__button">Ver Demo<span class="overlay"></span></a>
+                                </div>
+                            </div>
+                        </li> -->
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container__contact">
+                <h2 class="title contact__title">Contacto</h2>
+                <div class="contact__container">
+                    <form class="contact__form">
+                        <div class="input-container">
+                            <input name="name" type="text" class="input" placeholder="Nombre" required
+                                data-tipo="nombre">
+                            <span class="input-message-error"></span>
+                        </div>
+                        <div class="input-container">
+                            <input name="email" type="email" class="input" placeholder="Email" required
+                                data-tipo="email">
+                            <span class="input-message-error"></span>
+                        </div>
+                        <div class="input-container">
+                            <input name="asunto" type="text" class="input" placeholder="Asunto" required
+                                data-tipo="asunto" pattern="[\s\S]{4,25}">
+                            <span class="input-message-error"></span>
+                        </div>
+                        <div class="input-container">
+                            <textarea name="message" id="" placeholder="Mensaje" class="input input__msg" required
+                                data-tipo="message" pattern="[\s\S]{4,10}"></textarea>
+                            <span class="input-message-error"></span>
+                        </div>
+                        <button class="form__button">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay2"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <section class="footer">
+            <div class="container__footer">
+                <p class="footer__copyright">© Copyright Desarrollado por Antony Huaman 2023</p>
+            </div>
+        </section>
     </footer>
 
+    <script src="resources/js/main.js"></script>
+    <script type="module" src="service/app.js"></script>
 </body>
 
 </html>
