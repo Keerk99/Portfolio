@@ -1,0 +1,28 @@
+/*FOOTER*/
+
+.footer {
+    background: var(--background-navbar);
+}
+
+.container__footer {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright {
+    font-size: 1.1rem;
+}
+
+/*END OF FOOTER*/
+
+@media screen and (min-width: 280px) and (max-width: 1439px) {
+    .container__footer {
+        width: 100%;
+        text-align: center;
+    }
+}
