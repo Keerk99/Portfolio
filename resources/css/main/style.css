@@ -12,7 +12,7 @@ main {
 
 .container__banner {
     width: 31.25rem;
-    height: 43.75rem;
+    height: 75vh;
     background: var(--background-navbar);
     border-radius: 0 0 50px 50px;
     margin: 3rem 0 0;
@@ -21,12 +21,13 @@ main {
     align-items: center;
     justify-content: flex-start;
     padding: 2rem;
+    gap: 40px;
 }
 
 .perfil {
     background: url('../../img/perfil.jpg') no-repeat center / cover;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     border: 5px solid #1CB698;
 }
@@ -35,7 +36,6 @@ main {
     color: var(--text);
     width: 100%;
     text-align: center;
-    margin: 2rem 0;
 }
 
 .information__name {
@@ -480,10 +480,6 @@ main {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    .container__banner {
-        height: 38rem;
-    }
-
     .perfil {
         width: 340px;
         height: 340px;
@@ -518,8 +514,8 @@ main {
 @media screen and (min-width: 425px) and (max-width: 767px) {
 
     .container__banner {
-        height: 35rem;
         width: 20rem;
+        height: 70vh;
     }
 
     .perfil {
@@ -572,9 +568,10 @@ main {
 @media screen and (min-width: 320px) and (max-width: 424px) {
 
     .container__banner {
-        height: 30rem;
+        height: 70vh;
         width: 15rem;
-        margin-top: 5rem;
+        margin-top: 4rem;
+        gap: 20px;
     }
 
     .perfil {
@@ -674,7 +671,7 @@ main {
 @media screen and (min-width: 280px) and (max-width: 319px) {
 
     .container__banner {
-        height: 30rem;
+        height: 75vh;
         width: 15rem;
         margin-top: 1rem;
     }
