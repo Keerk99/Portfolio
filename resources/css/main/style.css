@@ -12,30 +12,24 @@ main {
 
 .container__banner {
     width: 31.25rem;
-    height: 75vh;
     background: var(--background-navbar);
-    border-radius: 0 0 50px 50px;
-    margin: 3rem 0 0;
+    border-radius: 50px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 2rem;
+    justify-content: center;
+    padding: 4rem 2rem;
     gap: 40px;
-}
-
-.perfil {
-    background: url('../../img/perfil.jpg') no-repeat center / cover;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    border: 5px solid #1CB698;
 }
 
 .information {
     color: var(--text);
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .information__name {
@@ -373,76 +367,8 @@ main {
 .contact__container {
     width: 62.5rem;
     margin: 0 auto;
-}
-
-.contact__form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.input-container {
-    margin: 20px 10px;
-}
-
-.input {
-    color: var(--text);
-    width: 600px;
-    height: 50px;
-    padding: 10px;
-    font-size: 1.2rem;
-    background: var(--background-navbar);
-    border: none;
-}
-
-.input:focus,
-.input__msg:focus {
-    outline: none;
-}
-
-.input__msg {
-    color: var(--text);
-    width: 600px;
-    height: 250px;
-    padding: 10px;
-    font-size: 1.2rem;
-    resize: none;
-    background: var(--background-navbar);
-    border: none;
-}
-
-.input-message-error {
-    display: none;
-}
-
-.form__button {
-    position: relative;
-    margin: 20px 10px;
-    width: 200px;
-    height: 50px;
-    font-size: 1.2rem;
-    background: transparent;
-    color: var(--text);
-    cursor: pointer;
-    display: block;
-    z-index: 10;
-    border: 1px solid #FFFFFF;
-}
-
-.form__button .overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: var(--text-navbar);
-    z-index: -10;
-    transition: 1s;
-}
-
-.form__button:hover .overlay2 {
-    width: 100%;
+    justify-content: space-evenly;
 }
 
 /*END SECTION CONTACT*/
@@ -480,11 +406,6 @@ main {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    .perfil {
-        width: 340px;
-        height: 340px;
-    }
-
     .container__aboutme,
     .container__skills,
     .skills__container,
@@ -515,12 +436,6 @@ main {
 
     .container__banner {
         width: 20rem;
-        height: 70vh;
-    }
-
-    .perfil {
-        width: 200px;
-        height: 200px;
     }
 
     .container__aboutme,
@@ -555,33 +470,21 @@ main {
     .projects__text {
         text-align: center;
     }
-
-    .input-container {
-        width: 100%;
-    }
-
-    .input {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
 
     .container__banner {
-        height: 70vh;
         width: 15rem;
-        margin-top: 4rem;
         gap: 20px;
     }
 
-    .perfil {
-        width: 150px;
-        height: 150px;
+    .information {
+        gap: 1rem;
     }
 
     .information__name {
         font-size: 2rem;
-        margin-bottom: 1rem;
     }
 
     .container__aboutme,
@@ -658,32 +561,20 @@ main {
         text-align: center;
         font-size: 1rem;
     }
-
-    .input-container {
-        width: 100%;
-    }
-
-    .input {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 280px) and (max-width: 319px) {
 
     .container__banner {
-        height: 75vh;
         width: 15rem;
-        margin-top: 1rem;
     }
 
-    .perfil {
-        width: 150px;
-        height: 150px;
+    .information {
+        gap: 1rem;
     }
 
     .information__name {
         font-size: 2rem;
-        margin-bottom: 1rem;
     }
 
     .container__aboutme,
@@ -760,13 +651,4 @@ main {
         text-align: center;
         font-size: 1rem;
     }
-
-    .input-container {
-        width: 100%;
-    }
-
-    .input {
-        width: 100%;
-    }
-
 }

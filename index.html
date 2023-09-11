@@ -57,9 +57,8 @@
     <main>
         <section id="inicio" class="banner">
             <div class="container__banner">
-                <div class="perfil"></div>
                 <div class="information">
-                    <h1 class="information__name">Antony Huaman</h1>
+                    <h1 class="information__name">Antony Huaman Tuanama</h1>
                     <p class="information__description">Ingeniero de Software</p>
                 </div>
                 <div class="links">
@@ -102,6 +101,8 @@
                         <li class="skills__list__name"><i class="icon fa-brands fa-square-js"></i>JavaScript</li>
                         <li class="skills__list__name"><i class="icon fa-brands fa-css3-alt"></i>CSS</li>
                         <li class="skills__list__name"><i class="icon fa-solid fa-database"></i>SQL</li>
+                        <li class="skills__list__name"><i class="icon fa-brands fa-react"></i>React</li>
+                        <li class="skills__list__name"><i class="icon fa-brands fa-node"></i>Node</li>
                     </ul>
                 </div>
             </div>
@@ -171,6 +172,19 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="projects__list__name">
+                            <img src="resources/img/proyecto3.JPG" alt="" class="projects__img">
+                            <div class="projects__text">
+                                <h3 class="text__subtitle">AluraFlix</h3>
+                                <p class="text__description">Challenge Oracle</p>
+                                <div class="button__container">
+                                    <a href="https://github.com/Keerk99/AluraFlix" target="_blank"
+                                        class="text__button">Repositorio<span class="overlay"></span></a>
+                                    <a href="https://alura-flix-cyan.vercel.app" target="_blank"
+                                        class="text__button">Ver Demo<span class="overlay"></span></a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -179,31 +193,20 @@
             <div class="container__contact">
                 <h2 class="title contact__title">Contacto</h2>
                 <div class="contact__container">
-                    <form class="contact__form">
-                        <div class="input-container">
-                            <input name="name" type="text" class="input" placeholder="Nombre" required
-                                data-tipo="nombre">
-                            <span class="input-message-error"></span>
-                        </div>
-                        <div class="input-container">
-                            <input name="email" type="email" class="input" placeholder="Email" required
-                                data-tipo="email">
-                            <span class="input-message-error"></span>
-                        </div>
-                        <div class="input-container">
-                            <input name="asunto" type="text" class="input" placeholder="Asunto" required
-                                data-tipo="asunto" pattern="[\s\S]{4,25}">
-                            <span class="input-message-error"></span>
-                        </div>
-                        <div class="input-container">
-                            <textarea name="message" id="" placeholder="Mensaje" class="input input__msg" required
-                                data-tipo="message" pattern="[\s\S]{4,10}"></textarea>
-                            <span class="input-message-error"></span>
-                        </div>
-                        <button class="form__button">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay2"></span>
-                        </button>
-                    </form>
+                    <li class="links__list__name">
+                        <a href="mailto:antonyhuamantuanama@gmail.com"
+                            class="links__list__name-link fa-solid fa-envelope"></a>
+                    </li>
+                    <li class="links__list__name">
+                        <a class="links__list__name-link fa-brands fa-linkedin"
+                            href="https://www.linkedin.com/in/keerk99" target="_blank">
+                        </a>
+                    </li>
+                    <li class="links__list__name">
+                        <a class="links__list__name-link fa-brands fa-github" href="https://github.com/Keerk99"
+                            target="_blank">
+                        </a>
+                    </li>
                 </div>
             </div>
         </section>
