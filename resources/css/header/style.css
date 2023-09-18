@@ -21,7 +21,6 @@ header {
 .logo__name {
     font-size: 2.5rem;
     background: var(--background-navbar);
-    ;
     color: var(--text-navbar);
     text-decoration: none;
 }
@@ -181,7 +180,7 @@ header {
 }
 
 
-@media screen and (min-width: 280px) and (max-width: 319px) {
+@media screen and (min-width: 0) and (max-width: 319px) {
 
 
     header {

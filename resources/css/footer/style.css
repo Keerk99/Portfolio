@@ -20,9 +20,14 @@
 
 /*END OF FOOTER*/
 
-@media screen and (min-width: 280px) and (max-width: 1439px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
     .container__footer {
         width: 100%;
         text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer__copyright {
+        font-size: .7rem;
     }
 }
