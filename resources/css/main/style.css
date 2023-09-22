@@ -62,6 +62,7 @@ main {
     height: 3.5rem;
     display: flex;
     transition: background .8s;
+    cursor: pointer;
 }
 
 .links__list__name:hover {
