@@ -16,8 +16,6 @@ import { userServices } from "../service/user-service.js";
                     <h3 class="text__subtitle">${project.title}</h3>
                     <p class="text__description">${project.description}</p>
                     <div class="button__container">
-                        <a href=${project.repository} target="_blank"
-                                        class="text__button">Repository<span class="overlay"></span></a>
                         <a href=${project.web} target="_blank"
                                         class="text__button">Play Demo<span class="overlay"></span></a>
                     </div>
