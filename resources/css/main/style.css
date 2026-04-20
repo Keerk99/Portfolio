@@ -321,8 +321,6 @@ main {
 
 .button__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 1rem 0;
 }
 
@@ -434,6 +432,11 @@ main {
         gap: 30px;
     }
 
+    .button__container {
+        justify-content: center;
+        align-items: center;
+    }
+
     .projects__text {
         text-align: center;
     }
@@ -468,6 +471,11 @@ main {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    .button__container {
+        justify-content: center;
+        align-items: center;
     }
 
     .projects__img {
@@ -560,6 +568,11 @@ main {
         gap: 10px;
     }
 
+    .button__container {
+        justify-content: center;
+        align-items: center;
+    }
+
     .projects__img {
         width: 250px;
         border-radius: .5rem;
@@ -638,6 +651,11 @@ main {
     .formacion__list__name {
         width: 100%;
         justify-content: flex-start;
+    }
+
+    .button__container {
+        justify-content: center;
+        align-items: center;
     }
 
     .formation__img {
